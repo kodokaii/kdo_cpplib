@@ -6,7 +6,7 @@
 /*   By: nlaerema <nlaerema@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:58:17 by nlaerema          #+#    #+#             */
-/*   Updated: 2024/04/10 16:03:37 by nlaerema         ###   ########.fr       */
+/*   Updated: 2024/10/08 15:09:55 by nlaerema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ namespace kdo
 {
 	typedef enum EStateFlags
 	{
-		clearbit	= 1 << -1,
+		clearbit	= 1 >> 1,
 		goodbit		= 1 << 0,
 		eofbit		= 1 << 1,
 		failbit 	= 1 << 2,

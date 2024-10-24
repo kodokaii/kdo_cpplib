@@ -6,7 +6,7 @@
 /*   By: nlaerema <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 15:29:49 by nlaerema          #+#    #+#             */
-/*   Updated: 2024/04/17 19:51:53 by nlaerema         ###   ########.fr       */
+/*   Updated: 2024/10/24 10:59:58 by nlaerema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ namespace kdo
 
 	bool    allConverted(std::ios_base::iostate state)
 	{
-		return (!(state ^ std::ios::eofbit & (std::ios::badbit | std::ios::eofbit)));
+		return (!((state ^ std::ios::eofbit) & (std::ios::badbit | std::ios::eofbit)));
 	}
 
 }

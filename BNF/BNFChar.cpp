@@ -6,7 +6,7 @@
 /*   By: nlaerema <nlaerema@student.42lehavre.fr>	+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 10:58:17 by nlaerema          #+#    #+#             */
-/*   Updated: 2024/04/14 18:36:26 by nlaerema         ###   ########.fr       */
+/*   Updated: 2024/10/24 10:00:25 by nlaerema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,12 @@ BNFChar::BNFChar(std::string const &name, char c):	BNFParser(name),
 {
 }
 
-BNFChar::BNFChar(char c):	BNFParser((char[4]){'\'', c, '\''}),
+BNFChar::BNFChar(char c):	BNFParser(NULL),
 							c(c)
 {
+	char	name[4] = {'\'', c, '\''};
+
+	this->name = name;
 }
 
 BNFChar::BNFChar(BNFChar const &other): BNFParser(other),
