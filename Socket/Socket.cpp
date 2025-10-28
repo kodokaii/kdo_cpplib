@@ -1,16 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   Socket.cpp                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: nlaerema <nlaerema@student.42lehavre.fr>	+#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/05 10:58:17 by nlaerema          #+#    #+#             */
-/*   Updated: 2024/03/17 23:01:36 by nlaerema         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "../kdolib.hpp"
+#include "../kdo_cpplib.hpp"
 #include "Socket.hpp"
 
 Socket::Socket(void):	fd(INVALID_FD)

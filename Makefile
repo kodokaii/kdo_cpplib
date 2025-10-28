@@ -1,8 +1,7 @@
-NAME 		= kdolib.a
+NAME 		= kdo_cpplib.a
 
 CXX			= c++
 RM			= rm -f
-CLONE 		= git clone --depth=1
 
 CXXFLAGS	+= -Wall -Wextra -Werror -std=c++98
 LDLIBS		=
@@ -48,4 +47,4 @@ re: fclean all
 fast: fclean
 	$(MAKE) -j$$(nproc)
 
-.PHONY:		all clean fclean re
+.PHONY:		all clean fclean re fast
