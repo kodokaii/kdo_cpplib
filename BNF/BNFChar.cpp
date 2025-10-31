@@ -5,7 +5,7 @@ BNFChar::BNFChar(std::string const &name, char c):	BNFParser(name),
 {
 }
 
-BNFChar::BNFChar(char c):	BNFParser(NULL),
+BNFChar::BNFChar(char c):	BNFParser(),
 							c(c)
 {
 	char	name[4] = {'\'', c, '\''};
